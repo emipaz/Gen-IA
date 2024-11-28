@@ -1,0 +1,641 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Semana_2</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+    </head>
+    <body>
+        <h1>Modelos de Lenguaje Grande (LLMs) como Asistentes en Desarrollo de Software</h1>
+<h2>Descripción</h2>
+<p>En este documento se exploran las capacidades de los Modelos de Lenguaje Grande (LLMs) y cómo pueden actuar como socios en la programación y el desarrollo. Se discuten sus aplicaciones en la mejora de la eficiencia del código, la gestión de dependencias, la generación de documentación, la reducción de la deuda técnica y la innovación en el desarrollo de software.</p>
+<h2>Contenidos</h2>
+<h3>1. Transformación en el Desarrollo de Software</h3>
+<p>Los LLMs, basados en arquitecturas de transformadores, pueden transformar la forma en que los desarrolladores abordan los desafíos de programación. Algunas de sus capacidades incluyen:</p>
+<ul>
+<li><strong>Análisis de Código</strong>: Pueden escanear el código en busca de errores de sintaxis, bugs y eficiencias potenciales.</li>
+<li><strong>Sugerencias de Algoritmos</strong>: Proponen mejores algoritmos y refactorizan el código para mejorar el rendimiento.</li>
+<li><strong>Depuración Eficiente</strong>: Ayudan a rastrear la ejecución del código para identificar problemas, reduciendo el ciclo de depuración.</li>
+</ul>
+<h3>2. Gestión de Dependencias</h3>
+<p>La gestión de dependencias puede ser complicada. Los LLMs pueden:</p>
+<ul>
+<li>Analizar archivos de proyecto y las importaciones de código.</li>
+<li>Sugerir actualizaciones o identificar versiones incompatibles.</li>
+<li>Minimizar el riesgo de conflictos y el uso de bibliotecas obsoletas.</li>
+</ul>
+<h3>3. Generación de Documentación</h3>
+<p>La documentación es esencial pero a menudo descuidada. Los LLMs pueden:</p>
+<ul>
+<li>Generar automáticamente comentarios y documentación.</li>
+<li>Mejorar la legibilidad y mantenibilidad del código para futuras revisiones y colaboraciones en equipo.</li>
+</ul>
+<h3>4. Reducción de Deuda Técnica</h3>
+<p>La deuda técnica puede acumularse rápidamente. Los LLMs pueden:</p>
+<ul>
+<li>Revisar el código para ayudar a entenderlo.</li>
+<li>Sugerir estrategias de refactorización o rediseño.</li>
+<li>Priorizar tareas de reducción de deuda para facilitar el trabajo de futuros desarrolladores.</li>
+</ul>
+<h3>5. Innovación y Creatividad</h3>
+<p>Los LLMs no solo ayudan con tareas cotidianas, sino que también permiten:</p>
+<ul>
+<li>Brainstorming de soluciones creativas a problemas complejos.</li>
+<li>Propuestas de características innovadoras.</li>
+<li>Simulación de la integración de nuevos módulos con sistemas existentes.</li>
+</ul>
+<h3>6. Integración de LLMs en el Proceso de Desarrollo</h3>
+<p>Integrar LLMs en el proceso de desarrollo revoluciona la forma en que se abordan las tareas, permitiendo a los desarrolladores centrarse más en los aspectos creativos y estratégicos del desarrollo.</p>
+<h2>Conclusión</h2>
+<p>Los Modelos de Lenguaje Grande deben ser considerados no solo como herramientas, sino como miembros integrales del equipo de desarrollo. En la próxima sección, se explorarán interfaces de chat como ChatGPT o Gemini para comenzar la programación en pareja con un asistente de IA.</p>
+<h2>Tabla Resumen de Capacidades de LLMs</h2>
+<table>
+<thead>
+<tr>
+<th>Capacidad</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Análisis de Código</td>
+<td>Escaneo de errores de sintaxis y bugs.</td>
+</tr>
+<tr>
+<td>Sugerencias de Algoritmos</td>
+<td>Propuestas de algoritmos y refactorización.</td>
+</tr>
+<tr>
+<td>Depuración Eficiente</td>
+<td>Identificación de problemas en la ejecución del código.</td>
+</tr>
+<tr>
+<td>Gestión de Dependencias</td>
+<td>Análisis de archivos y sugerencias de actualizaciones.</td>
+</tr>
+<tr>
+<td>Generación de Documentación</td>
+<td>Creación automática de comentarios y documentación.</td>
+</tr>
+<tr>
+<td>Reducción de Deuda Técnica</td>
+<td>Revisión y sugerencias para mejorar el código heredado.</td>
+</tr>
+<tr>
+<td>Innovación y Creatividad</td>
+<td>Brainstorming y simulación de nuevas características.</td>
+</tr>
+</tbody>
+</table>
+<p>Este documento proporciona una visión general de cómo los LLMs pueden ser aliados valiosos en el desarrollo de software, mejorando la eficiencia y fomentando la innovación.</p>
+<hr />
+<h1>Uso de LLMs para la Automatización del Desarrollo de Código</h1>
+<h2>Descripción</h2>
+<p>En esta lección, se explora cómo utilizar un modelo de lenguaje grande (LLM), específicamente GPT-4o a través de la interfaz de ChatGPT, para escribir código y acelerar el proceso de desarrollo. Se presentan ejemplos de cómo formular solicitudes específicas para obtener resultados óptimos en diferentes lenguajes de programación.</p>
+<h2>Contenido</h2>
+<h3>Ejemplo de Funciones en Diferentes Lenguajes</h3>
+<ol>
+<li><strong>Python</strong></li>
+<li><strong>Función</strong>: Sumar dos números.</li>
+<li><strong>Prompt</strong>: "¿Puedes escribir una función en Python para sumar dos números llamados a y b y devolver el resultado?"</li>
+<li>
+<p><strong>Código Generado</strong>:
+     <code>python
+     def add_to_numbers(a, b):
+         return a + b</code></p>
+</li>
+<li>
+<p><strong>JavaScript</strong></p>
+</li>
+<li><strong>Prompt</strong>: "Crea una función en JavaScript que sume dos números."</li>
+<li>
+<p><strong>Código Generado</strong>:
+     <code>javascript
+     function addToNumbers(a, b) {
+         return a + b;
+     }</code></p>
+</li>
+<li>
+<p><strong>C#</strong></p>
+</li>
+<li><strong>Prompt</strong>: "Escribe una función en C# que sume dos números."</li>
+<li><strong>Código Generado</strong>:
+     ```csharp
+     public class Program {
+         public static void Main(string[] args) {
+             int result = AddToNumbers(5, 10);
+             Console.WriteLine(result);
+         }<pre><code> public static int AddToNumbers(int a, int b) {
+     return a + b;
+ }
+</code></pre>
+<p>}
+ ```</p>
+</li>
+</ol>
+<h3>Importancia del Conocimiento del Dominio</h3>
+<ul>
+<li>La experiencia en el lenguaje, las APIs y las bibliotecas de soporte son cruciales para ser un mejor desarrollador y un mejor "prompter".</li>
+<li>El conocimiento del problema de negocio también ayuda a expresar soluciones de manera más efectiva.</li>
+</ul>
+<h3>Mejora Continua del Código</h3>
+<ul>
+<li><strong>Ejemplo de JavaScript</strong>: Verificación de números primos.</li>
+<li><strong>Código Inicial</strong>:
+    <code>javascript
+    function isPrime(num) {
+        if (num &lt; 2) return false;
+        for (let i = 2; i &lt;= Math.sqrt(num); i++) {
+            if (num % i === 0) return false;
+        }
+        return true;
+    }</code></li>
+<li><strong>Mejora</strong>: Agregar manejo de errores para asegurar que la entrada sea un entero positivo.</li>
+<li><strong>Código Mejorado</strong>:
+    <code>javascript
+    function isPrime(num) {
+        if (!Number.isInteger(num) || num &lt; 1) {
+            throw new Error("Input must be a positive integer.");
+        }
+        if (num &lt; 2) return false;
+        for (let i = 2; i &lt;= Math.sqrt(num); i++) {
+            if (num % i === 0) return false;
+        }
+        return true;
+    }</code></li>
+</ul>
+<h3>Especificidad en los Prompts</h3>
+<ul>
+<li>Prompts vagos pueden llevar a salidas ambiguas. Es importante ser específico y claro.</li>
+<li><strong>Ejemplo de API con Flask</strong>:</li>
+<li><strong>Prompt Detallado</strong>: Instrucciones sobre el marco, tipo de solicitud, URL del endpoint, parámetros y salida esperada.</li>
+<li>
+<p><strong>Código Generado</strong>:
+    ```python
+    from flask import Flask, request, jsonify</p>
+<p>app = Flask(<strong>name</strong>)</p>
+<p>@app.route('/multiply', methods=['POST'])
+def multiply():
+    data = request.json
+    if 'a' not in data or 'b' not in data:
+        return jsonify({"error": "Missing parameters"}), 400
+    a = data['a']
+    b = data['b']
+    if not isinstance(a, int) or not isinstance(b, int):
+        return jsonify({"error": "Parameters must be integers"}), 400
+    return jsonify({"result": a * b})
+```</p>
+</li>
+</ul>
+<h3>Depuración de Código</h3>
+<ul>
+<li>Se puede utilizar un LLM para ayudar a identificar errores en el código.</li>
+<li><strong>Ejemplo</strong>: Proporcionar código con un error y pedir al modelo que lo identifique.</li>
+<li><strong>Error Común</strong>: División por cero si la lista está vacía.</li>
+</ul>
+<h3>Ejercicio Práctico</h3>
+<ul>
+<li><strong>Tarea</strong>: Pedir a ChatGPT que escriba una función que calcule el área de un círculo dado el radio.</li>
+<li><strong>Prompt Sugerido</strong>: "Escribe una función que calcule el área de un círculo dado el radio, incluyendo manejo de errores para entradas no numéricas y comentarios explicativos."</li>
+</ul>
+<h2>Conclusión</h2>
+<p>La calidad de los prompts influye directamente en la calidad del código generado. Al proporcionar detalles y contexto, se puede obtener un código más funcional y útil.</p>
+<hr />
+<h1>Mejores Prácticas para Prompts Efectivos en Modelos de Lenguaje</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen las mejores prácticas para crear prompts efectivos al interactuar con modelos de lenguaje (LLM) para la generación de código. Se discuten la importancia de la claridad, el contexto y la iteración en la creación de prompts, así como la necesidad de pruebas y documentación en el código generado.</p>
+<h2>Claves para un Prompt Efectivo</h2>
+<ol>
+<li><strong>Claridad del Prompt</strong></li>
+<li>La claridad de tu prompt influye directamente en la precisión del código generado.</li>
+<li>Un prompt vago puede resultar en respuestas confusas. Por lo tanto, es fundamental proporcionar detalles específicos.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Ejemplo de Prompt Vago</th>
+<th>Ejemplo de Prompt Claro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Escribe una función en Python."</td>
+<td>"Escribe una función en Python que descargue un archivo y lo guarde en disco sin usar wget."</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Importancia del Contexto</strong></li>
+<li>El contexto en el prompt puede guiar al LLM hacia una respuesta más alineada con tus requerimientos.</li>
+<li>Proporcionar información adicional puede cambiar drásticamente la salida.</li>
+</ol>
+<p>```python
+   # Ejemplo de función generada con contexto
+   import requests</p>
+<p>def descargar_archivo(url, nombre_archivo):
+       respuesta = requests.get(url)
+       with open(nombre_archivo, 'wb') as archivo:
+           archivo.write(respuesta.content)
+   ```</p>
+<ol>
+<li><strong>Iteración en el Prompt</strong></li>
+<li>Refinar la salida del LLM mediante la iteración en el prompt es crucial.</li>
+<li>Si el código generado carece de manejo de errores, puedes solicitar que se añada.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Prompt Inicial</th>
+<th>Respuesta del Modelo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Crea una API simple."</td>
+<td>Código básico de API sin manejo de errores.</td>
+</tr>
+<tr>
+<td>"Añade manejo de errores a la API."</td>
+<td>Código mejorado con manejo de errores.</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>Documentación del Código</strong></li>
+<li>La documentación es esencial para que otros desarrolladores comprendan el código.</li>
+<li>Solicitar comentarios en el código generado mejora su legibilidad.</li>
+</ol>
+<p><code>python
+   # Ejemplo de código comentado
+   def obtener_usuario(id):
+       """
+       Obtiene un usuario por su ID.
+       Lanza un error 404 si no se encuentra el usuario.
+       """
+       # Lógica para obtener el usuario
+       pass</code></p>
+<h2>Conclusiones</h2>
+<ul>
+<li>La habilidad de crear prompts efectivos y de iterar sobre ellos es fundamental para mejorar la calidad del código generado por LLM.</li>
+<li>La experiencia en desarrollo web, pruebas y manejo de errores es crucial, independientemente de si el código es generado o escrito por humanos.</li>
+<li>La mejora continua del código a través de prompts es una habilidad valiosa que todo desarrollador debe dominar.</li>
+</ul>
+<hr />
+<h1>Desarrollo Iterativo con Modelos de Lenguaje</h1>
+<h2>Descripción</h2>
+<p>Este documento resume las ideas y conceptos presentados en un video sobre el uso de modelos de lenguaje (LLM) para la escritura y mejora de código. Se exploran ejemplos prácticos de cómo incorporar retroalimentación para refinar el código generado, destacando la importancia de la validación de entradas y la robustez del código.</p>
+<h2>Conceptos Clave</h2>
+<ol>
+<li><strong>Desarrollo Iterativo</strong>: </li>
+<li>Se basa en la idea de solicitar al modelo que genere un código y luego re-prompting para actualizar y mejorar ese código.</li>
+<li>
+<p>La retroalimentación es crucial para identificar y corregir errores o deficiencias en el código.</p>
+</li>
+<li>
+<p><strong>Código como Borrador</strong>:</p>
+</li>
+<li>El código generado por un LLM se considera un primer borrador, que rara vez es perfecto y requiere trabajo adicional para perfeccionarlo.</li>
+</ol>
+<h2>Ejemplos Prácticos</h2>
+<h3>Ejemplo 1: Cálculo del Factorial</h3>
+<ul>
+<li><strong>Problema</strong>: Crear una función en Python que calcule el factorial de un número.</li>
+<li><strong>Código Inicial</strong>:
+  <code>python
+  def factorial(n):
+      return 1 if n == 0 else n * factorial(n - 1)</code></li>
+<li><strong>Problema Identificado</strong>: Asume que la entrada es un entero.</li>
+<li><strong>Código Mejorado</strong>:
+  <code>python
+  def factorial(n):
+      if not isinstance(n, int) or n &lt; 0:
+          raise ValueError("El número debe ser un entero no negativo.")
+      return 1 if n == 0 else n * factorial(n - 1)</code></li>
+</ul>
+<h3>Ejemplo 2: Verificación de Palíndromos</h3>
+<ul>
+<li><strong>Problema</strong>: Determinar si una cadena es un palíndromo.</li>
+<li><strong>Código Inicial</strong>:
+  <code>python
+  def es_palindromo(s):
+      return s == s[::-1]</code></li>
+<li><strong>Problema Identificado</strong>: No verifica si la cadena está vacía.</li>
+<li><strong>Código Mejorado</strong>:
+  <code>python
+  def es_palindromo(s):
+      if not s:
+          return False
+      s = s.replace(" ", "").lower()
+      return s == s[::-1]</code></li>
+</ul>
+<h3>Ejemplo 3: Caracteres Únicos en una Cadena</h3>
+<ul>
+<li><strong>Problema</strong>: Encontrar todos los caracteres únicos en una cadena.</li>
+<li><strong>Código Inicial</strong>:
+  <code>python
+  def caracteres_unicos(s):
+      return set(s)</code></li>
+<li><strong>Simplicidad del Código</strong>: Uso de la función <code>set</code> en Python simplifica la solución.</li>
+</ul>
+<h2>Estrategias de Retroalimentación</h2>
+<ul>
+<li><strong>Incorporar Retroalimentación</strong>: Es esencial para adaptar el código a necesidades específicas.</li>
+<li><strong>Revisión y Refinamiento</strong>: Asegurarse de que el código no solo funcione, sino que sea eficiente y robusto.</li>
+</ul>
+<h2>Conclusiones</h2>
+<ul>
+<li>La interacción continua con un LLM permite un desarrollo iterativo similar al de un proyecto de software con múltiples desarrolladores.</li>
+<li>La retroalimentación sobre errores o deficiencias en el código permite afinar y mejorar el resultado final.</li>
+<li>El uso adecuado de estas estrategias de prompting puede convertirte en un mejor ingeniero de software.</li>
+</ul>
+<h2>Próximos Pasos</h2>
+<p>En el siguiente video, se explorará cómo asignar un rol al modelo para obtener respuestas más útiles y específicas.</p>
+<hr />
+<h1>Guía para Interactuar con Modelos de Lenguaje AI</h1>
+<h2>Descripción</h2>
+<p>En esta guía, exploraremos cómo la especificidad en los requerimientos y la asignación de roles a un modelo de lenguaje (LLM) como ChatGPT pueden mejorar la calidad de las respuestas y el código generado. Aprenderemos a formular prompts efectivos que se adapten a diferentes niveles de experiencia, desde principiantes hasta usuarios avanzados.</p>
+<h2>Contenidos</h2>
+<h3>1. Importancia de la Especificidad</h3>
+<ul>
+<li>Ser claro y específico en los requerimientos ayuda a que el modelo genere código eficiente.</li>
+<li>Utilizar la experiencia en el dominio para solicitar dependencias conocidas mejora la calidad del código.</li>
+</ul>
+<h3>2. Estrategia de Desarrollo Iterativo</h3>
+<ul>
+<li>La interacción continua con el modelo permite refinar y mejorar el código generado.</li>
+</ul>
+<h3>3. Asignación de Roles</h3>
+<ul>
+<li>Al interactuar con un LLM, el marco de los prompts es crucial.</li>
+<li>Especificar un rol para el modelo establece expectativas y guía el tono, nivel de detalle y perspectiva de la respuesta.</li>
+</ul>
+<h4>Ejemplo de Roles</h4>
+<ul>
+<li><strong>Tutor</strong>: Para principiantes que necesitan explicaciones más detalladas.</li>
+<li><strong>Experto</strong>: Para usuarios avanzados que prefieren respuestas más compactas y eficientes.</li>
+</ul>
+<h3>4. Ejemplos Prácticos</h3>
+<h4>Ejemplo 1: Generación de Código</h4>
+<ul>
+<li><strong>Prompt sin rol</strong>: "¿Cómo calcular el factorial de un número en Python?"</li>
+<li>
+<p>Respuesta: Código simple y directo.</p>
+</li>
+<li>
+<p><strong>Prompt con rol</strong>: "Como un tutor de Python para principiantes, ¿cómo calcularía el factorial de un número?"</p>
+</li>
+<li>Respuesta: Código con enfoque recursivo y explicación detallada.</li>
+</ul>
+<h4>Ejemplo 2: Creación de Listas en Python</h4>
+<ul>
+<li><strong>Prompt sin rol</strong>: "¿Cómo crear una lista en Python y agregar elementos?"</li>
+<li>
+<p>Respuesta: Técnica y precisa.</p>
+</li>
+<li>
+<p><strong>Prompt con rol</strong>: "Como un tutor amigable de Python, ¿puedes explicarme cómo crear una lista y agregar elementos?"</p>
+</li>
+<li>Respuesta: Más visual y accesible, adecuada para principiantes.</li>
+</ul>
+<h3>5. Ejemplo de Concepto: Bucles en Python</h3>
+<ul>
+<li><strong>Prompt</strong>: "Explícame el concepto de un bucle en Python como un guía amigable de código."</li>
+<li>Respuesta: Explicación clara y motivadora, ideal para principiantes.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>Definir un rol al interactuar con un modelo de lenguaje puede transformar la calidad de las respuestas. Esto no solo mejora la comprensión del usuario, sino que también hace que la experiencia de aprendizaje sea más intuitiva y efectiva. Al final de esta guía, estarás preparado para personalizar tus prompts y maximizar la productividad en tus proyectos de programación.</p>
+<hr />
+<h1>Resumen sobre la Combinación de Roles en Modelos de Lenguaje</h1>
+<h2>Descripción</h2>
+<p>En este documento se exploran las ventajas de combinar roles en modelos de lenguaje, específicamente en el contexto de la evaluación de scripts de Python para aplicaciones web. Se discute cómo un modelo puede ofrecer retroalimentación integral al actuar simultáneamente como arquitecto de software y experto en seguridad.</p>
+<h2>Ideas Clave</h2>
+<ol>
+<li>
+<p><strong>Impacto de los Roles</strong>: Los roles que se asignan a un modelo de lenguaje pueden influir significativamente en la calidad y profundidad de las respuestas generadas.</p>
+</li>
+<li>
+<p><strong>Combinación de Roles</strong>: Al solicitar que el modelo actúe como dos expertos (arquitecto de software y experto en seguridad), se pueden obtener respuestas más complejas e informativas.</p>
+</li>
+<li>
+<p><strong>Evaluación del Código</strong>:</p>
+</li>
+<li><strong>Arquitecto de Software</strong>:<ul>
+<li>Evaluación de la estructura del script.</li>
+<li>Escalabilidad del código.</li>
+<li>Identificación de redundancias que afectan el rendimiento.</li>
+<li>Adecuación del patrón de diseño para el propósito de la aplicación.</li>
+</ul>
+</li>
+<li><strong>Experto en Seguridad</strong>:<ul>
+<li>Análisis de vulnerabilidades en el script.</li>
+<li>Verificación de procesos de manejo seguro de datos.</li>
+<li>Detección de riesgos como inyecciones SQL o ataques de scripting entre sitios.</li>
+</ul>
+</li>
+</ol>
+<h2>Ejemplo de Prompt</h2>
+<p>Para obtener una evaluación completa, se puede estructurar un prompt de la siguiente manera:</p>
+<pre><code class="language-python"># Script de ejemplo para evaluación
+def ejemplo_funcion():
+    # Código aquí
+    pass
+</code></pre>
+<p><strong>Prompt</strong>: "Actúa como un arquitecto de software y un experto en seguridad. Evalúa el siguiente script y proporciona retroalimentación sobre su estructura y vulnerabilidades."</p>
+<h2>Resultados de la Evaluación</h2>
+<p>Al aplicar el prompt, el modelo identificó varios problemas, tales como:
+- Uso de un archivo de texto como base de datos.
+- Almacenamiento de nombre de usuario y contraseña en texto claro.</p>
+<h3>Sugerencias Propuestas</h3>
+<p>El modelo también ofreció un script mejorado, proporcionando consejos específicos y prácticos que pueden mejorar la calidad del código.</p>
+<h2>Conclusión</h2>
+<p>La combinación efectiva de roles en modelos de lenguaje transforma estas herramientas en recursos más poderosos para el desarrollo de software y la planificación de proyectos. Se recomienda seguir explorando técnicas avanzadas de ingeniería de prompts para maximizar el potencial de estos modelos.</p>
+<h2>Próximos Pasos</h2>
+<p>Mantente atento a la próxima sección sobre ingeniería de prompts a nivel experto.</p>
+<hr />
+<h1>Optimización de Respuestas de LLM Usando Roles</h1>
+<h2>Descripción</h2>
+<p>Este documento resume las estrategias para optimizar las respuestas de modelos de lenguaje (LLM) como GPT, utilizando roles específicos que permiten obtener críticas constructivas y sugerencias de mejora en el desarrollo de software. Se exploran ejemplos prácticos de cómo asignar roles a GPT para mejorar la calidad del código, integrar características avanzadas y realizar pruebas de software.</p>
+<h2>Contenidos</h2>
+<h3>1. Uso de Roles en LLM</h3>
+<ul>
+<li><strong>Objetivo</strong>: Instruir a GPT para que actúe como un miembro clave del equipo de desarrollo, ofreciendo perspectivas basadas en su entrenamiento.</li>
+<li><strong>Ejemplo</strong>: Crítica de una biblioteca de Python para visualización de datos.</li>
+</ul>
+<h3>2. Crítica de Bibliotecas</h3>
+<ul>
+<li><strong>Proceso</strong>:</li>
+<li>Proporcionar un código de una biblioteca de visualización.</li>
+<li>Pedir a GPT que actúe como contribuyente a proyectos de código abierto.</li>
+<li>
+<p>Esperar una crítica detallada sobre características, rendimiento y usabilidad.</p>
+</li>
+<li>
+<p><strong>Resultados</strong>:</p>
+</li>
+<li>Sugerencias de mejoras como:<ul>
+<li>Entrada de datos flexible.</li>
+<li>Más tipos de gráficos.</li>
+<li>Opciones de personalización.</li>
+</ul>
+</li>
+</ul>
+<h3>3. Integración de Características Avanzadas</h3>
+<ul>
+<li><strong>Objetivo</strong>: Mejorar una aplicación existente con capacidades de procesamiento de lenguaje natural (NLP).</li>
+<li><strong>Proceso</strong>:</li>
+<li>Asignar a GPT el rol de experto en NLP.</li>
+<li>
+<p>Solicitar análisis y sugerencias para aplicar técnicas avanzadas de NLP.</p>
+</li>
+<li>
+<p><strong>Resultados</strong>:</p>
+</li>
+<li>Corrección de errores en la inicialización de clases.</li>
+<li>Sugerencias para:<ul>
+<li>Preprocesamiento de texto.</li>
+<li>Métodos avanzados de resumen.</li>
+</ul>
+</li>
+</ul>
+<h3>4. Pruebas de Software</h3>
+<ul>
+<li><strong>Objetivo</strong>: Identificar y mitigar casos extremos y de borde en el código.</li>
+<li><strong>Proceso</strong>:</li>
+<li>Asignar a GPT el rol de tester de software.</li>
+<li>
+<p>Enfocar en la robustez del software.</p>
+</li>
+<li>
+<p><strong>Resultados</strong>:</p>
+</li>
+<li>Identificación de casos extremos.</li>
+<li>Estrategias sugeridas para manejarlos.</li>
+<li>Generación de un script en Python con pruebas para estos casos.</li>
+</ul>
+<h3>5. Integración de AI en Flujos de Trabajo de Desarrollo</h3>
+<ul>
+<li><strong>Aplicaciones</strong>:</li>
+<li>Automatización del proceso de revisión de código.</li>
+<li>Identificación de optimizaciones durante el desarrollo.</li>
+<li>Asistencia en la generación de documentación.</li>
+</ul>
+<h3>6. Conclusiones</h3>
+<ul>
+<li>La asignación de roles específicos a GPT permite obtener respuestas más detalladas y útiles.</li>
+<li>La experimentación continua con estas técnicas puede transformar proyectos de desarrollo, aumentando la eficiencia y precisión.</li>
+</ul>
+<h2>Tabla de Sugerencias de Mejora</h2>
+<table>
+<thead>
+<tr>
+<th>Rol</th>
+<th>Sugerencias de Mejora</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contribuyente</td>
+<td>Entrada de datos flexible, más tipos de gráficos, opciones de personalización</td>
+</tr>
+<tr>
+<td>Experto en NLP</td>
+<td>Preprocesamiento de texto, métodos avanzados de resumen</td>
+</tr>
+<tr>
+<td>Tester de Software</td>
+<td>Identificación de casos extremos, estrategias de manejo</td>
+</tr>
+</tbody>
+</table>
+<h2>Lista de Tareas Recomendadas</h2>
+<ul>
+<li>[ ] Probar la crítica de una biblioteca de Python con GPT.</li>
+<li>[ ] Implementar sugerencias de NLP en una aplicación existente.</li>
+<li>[ ] Realizar pruebas de software enfocadas en casos extremos.</li>
+<li>[ ] Integrar AI en el flujo de trabajo de desarrollo.</li>
+</ul>
+<h2>Recomendaciones Finales</h2>
+<p>Se alienta a los desarrolladores a seguir experimentando con estas técnicas para maximizar el potencial de AI en sus proyectos.</p>
+<hr />
+<h1>Mejores Prácticas para Interactuar con Modelos de Lenguaje (LLM)</h1>
+<h2>Descripción</h2>
+<p>Este documento resume las mejores prácticas para interactuar con modelos de lenguaje (LLM) y cómo el rol de un desarrollador puede cambiar al trabajar con estas herramientas. Se presentan recomendaciones sobre cómo formular prompts efectivos y cómo integrar LLM en el proceso de desarrollo de software.</p>
+<h2>Mejores Prácticas de Prompts</h2>
+<ol>
+<li><strong>Sé Específico</strong></li>
+<li>Proporciona detalles y contexto sobre tu problema.</li>
+<li>Los LLM pueden manejar grandes cantidades de texto, así que no dudes en incluir descripciones extensas o fragmentos de código.</li>
+<li>
+<p>Cuanto más específico sea tu prompt, mejor será la respuesta.</p>
+</li>
+<li>
+<p><strong>Asigna un Rol</strong></p>
+</li>
+<li>Define el rol que deseas que el LLM asuma (por ejemplo, tutor de programación o experto en software).</li>
+<li>Esto ayuda a personalizar la salida según tus necesidades.</li>
+<li>
+<p>Experimenta con diferentes roles para obtener el resultado deseado.</p>
+</li>
+<li>
+<p><strong>Solicita una Opinión de Experto</strong></p>
+</li>
+<li>Asigna al LLM el rol de experto en un dominio específico (como pruebas de software o ciberseguridad).</li>
+<li>
+<p>Pide retroalimentación sobre el código que ya has escrito para identificar fallos y optimizaciones.</p>
+</li>
+<li>
+<p><strong>Proporciona Retroalimentación</strong></p>
+</li>
+<li>Realiza prompts iterativos y ofrece feedback sobre las respuestas recibidas.</li>
+<li>Los LLM pueden recordar el contexto de la conversación, lo que permite ajustar las respuestas a tus necesidades.</li>
+<li>Es común necesitar varios intercambios antes de llegar a un resultado satisfactorio.</li>
+</ol>
+<h2>Cambios en el Rol del Desarrollador</h2>
+<ol>
+<li><strong>Experimenta con las Capacidades del LLM</strong></li>
+<li>Dedica tiempo a probar diferentes tareas que un LLM puede realizar.</li>
+<li>
+<p>Empuja los límites de lo que puede hacer, como entender partes complejas de tu código o refactorizar bibliotecas completas.</p>
+</li>
+<li>
+<p><strong>Prueba Cuidadosamente el Código Generado</strong></p>
+</li>
+<li>Aunque los LLM pueden generar código rápidamente, no siempre funcionará como se espera.</li>
+<li>
+<p>Revisa y prueba el código generado para asegurarte de que sea compatible con tu base de código.</p>
+</li>
+<li>
+<p><strong>Utiliza LLM como Herramienta de Aprendizaje</strong></p>
+</li>
+<li>Los LLM pueden sugerir diseños, bibliotecas de software y enfoques que no habías considerado.</li>
+<li>
+<p>Haz preguntas de seguimiento, solicita ejemplos de código o discute los pros y contras de las soluciones propuestas.</p>
+</li>
+<li>
+<p><strong>Recuerda que Eres el Experto en el Contexto</strong></p>
+</li>
+<li>A pesar de los prompts detallados, los LLM no conocen el contexto de tu proyecto tan bien como tú.</li>
+<li>Evalúa críticamente el código generado y decide si se ajusta a las necesidades de tu proyecto.</li>
+</ol>
+<h2>Conclusión</h2>
+<p>Con estas mejores prácticas, estarás mejor preparado para interactuar con LLM y mejorar tus habilidades de programación. Recuerda que el éxito en la interacción con un LLM depende de cómo tú y las necesidades de tu proyecto guíen el desarrollo del código. ¡Adelante y conviértete en un mejor programador!</p>
+<hr />
+
+    </body>
+        <script>
+        var stylesBot = "styles_bot.css";
+        var stylesMsj = "styles_msj.css";
+        const botName =  "bot-Semana_2";
+        const title = "Semana_2";
+        const bot = "2";
+        </script>
+    <script src='./script_bot.js'></script>
+    </html>
+    

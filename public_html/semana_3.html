@@ -1,0 +1,711 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>semana_3</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+    </head>
+    <body>
+        <h1>Exploración de Estructuras de Datos con LLM</h1>
+<h2>Descripción</h2>
+<p>En este módulo, se explorarán las estructuras de datos fundamentales que se estudian en la informática a nivel de pregrado. Se utilizará un modelo de lenguaje como ChatGPT para mejorar la codificación a través de la experimentación con prompts, conversaciones continuas y roles como ingeniero de software experto o tutor para principiantes. El objetivo es profundizar en la comprensión de problemas de ingeniería como la escalabilidad, mantenibilidad y seguridad.</p>
+<h2>Contenidos</h2>
+<h3>Estructuras de Datos Comunes</h3>
+<p>A continuación se presentan algunas de las estructuras de datos que se revisarán:</p>
+<table>
+<thead>
+<tr>
+<th>Estructura de Datos</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Arreglos</strong></td>
+<td>Colecciones de elementos del mismo tipo, accesibles por un índice.</td>
+</tr>
+<tr>
+<td><strong>Listas Enlazadas</strong></td>
+<td>Conjuntos de nodos donde cada nodo contiene un valor y un puntero al siguiente nodo.</td>
+</tr>
+<tr>
+<td><strong>Árboles</strong></td>
+<td>Estructuras jerárquicas que consisten en nodos conectados por aristas.</td>
+</tr>
+<tr>
+<td><strong>Grafos</strong></td>
+<td>Conjuntos de nodos conectados por aristas, que pueden ser dirigidos o no dirigidos.</td>
+</tr>
+</tbody>
+</table>
+<h3>Temas a Profundizar</h3>
+<ul>
+<li><strong>Escalabilidad</strong>: Cómo las estructuras de datos afectan el rendimiento y la capacidad de una aplicación para manejar un aumento en la carga.</li>
+<li><strong>Mantenibilidad</strong>: La facilidad con la que se puede modificar y actualizar el código.</li>
+<li><strong>Seguridad</strong>: Consideraciones sobre cómo las estructuras de datos pueden influir en la seguridad de la aplicación.</li>
+</ul>
+<h3>Actividades Sugeridas</h3>
+<ol>
+<li><strong>Experimentar con Prompts</strong>: Utilizar ChatGPT para generar ejemplos de código que implementen diferentes estructuras de datos.</li>
+<li><strong>Conversaciones Continuas</strong>: Mantener un diálogo con el LLM para resolver dudas sobre la implementación y optimización de estructuras de datos.</li>
+<li><strong>Roles de Aprendizaje</strong>: Alternar entre ser un ingeniero de software experto y un tutor para principiantes para obtener diferentes perspectivas sobre el uso de estructuras de datos.</li>
+</ol>
+<h2>Conclusión</h2>
+<p>Este módulo busca no solo refrescar conocimientos sobre estructuras de datos, sino también profundizar en su aplicación práctica en la construcción de código de producción, aprovechando la asistencia de un modelo de lenguaje. ¡Prepárate para explorar y aprender!</p>
+<hr />
+<h1>Estructuras de Datos Fundamentales: Arreglos y Listas Enlazadas</h1>
+<h2>Descripción</h2>
+<p>En este documento se exploran las estructuras de datos fundamentales, centrándose en los arreglos y las listas enlazadas. Se discuten sus características, limitaciones y cómo se pueden utilizar en la programación, especialmente en el contexto de modelos de lenguaje como GPT.</p>
+<h2>Arreglos</h2>
+<h3>Definición</h3>
+<p>Un arreglo es una colección de elementos almacenados en ubicaciones de memoria contiguas. Esto permite un acceso rápido y eficiente a los elementos si se conoce el índice del elemento deseado.</p>
+<h3>Ventajas</h3>
+<ul>
+<li><strong>Acceso Rápido</strong>: El acceso y la modificación de elementos en un arreglo son directos y rápidos.</li>
+<li><strong>Eficiencia</strong>: Python maneja arreglos de manera eficiente al almacenar datos en un bloque contiguo de memoria.</li>
+</ul>
+<h3>Desventajas</h3>
+<ul>
+<li><strong>Limitaciones de Memoria</strong>: Al trabajar con grandes volúmenes de datos (por ejemplo, miles de millones de filas), pueden surgir problemas como:</li>
+<li>Consumo elevado de memoria</li>
+<li>Fragmentación</li>
+<li>Problemas de rendimiento</li>
+<li>Flexibilidad limitada</li>
+</ul>
+<h3>Consideraciones de Rendimiento</h3>
+<p>Es importante considerar el rendimiento en diferentes escenarios. Por ejemplo, al implementar un arreglo con miles de millones de números, se deben tener en cuenta los riesgos asociados con el uso de memoria.</p>
+<h3>Ejemplo de Pregunta para el Modelo</h3>
+<p>Para explorar más sobre los riesgos, se puede formular la siguiente pregunta al modelo:</p>
+<pre><code>¿Qué pasaría si implementara miles de millones de números usando un arreglo? ¿Qué riesgos enfrentaría?
+</code></pre>
+<h2>Comparación con Listas Enlazadas</h2>
+<h3>Limitaciones de los Arreglos</h3>
+<ul>
+<li><strong>Orden Inherente</strong>: Los arreglos no tienen un orden inherente. Al agregar un nuevo valor, es necesario desplazar otros elementos, lo que puede ser poco práctico con grandes volúmenes de datos.</li>
+<li><strong>Eliminación de Elementos</strong>: Para eliminar un elemento, se debe borrar y desplazar los elementos restantes, lo que puede ser ineficiente en arreglos grandes.</li>
+</ul>
+<h3>Introducción a las Listas Enlazadas</h3>
+<p>Las listas enlazadas son una alternativa a los arreglos que permiten una mayor flexibilidad en la inserción y eliminación de elementos, ya que no requieren el desplazamiento de otros elementos.</p>
+<h2>Conclusión</h2>
+<p>La elección entre usar un arreglo o una lista enlazada dependerá del escenario específico y de las necesidades del programa. Es fundamental considerar las características y limitaciones de cada estructura de datos al tomar decisiones de diseño en programación.</p>
+<h2>Resumen de Puntos Clave</h2>
+<table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Arreglos</th>
+<th>Listas Enlazadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Almacenamiento</td>
+<td>Contiguo</td>
+<td>No contiguo</td>
+</tr>
+<tr>
+<td>Acceso</td>
+<td>O(1)</td>
+<td>O(n)</td>
+</tr>
+<tr>
+<td>Inserción</td>
+<td>O(n) (desplazamiento necesario)</td>
+<td>O(1) (si se tiene referencia)</td>
+</tr>
+<tr>
+<td>Eliminación</td>
+<td>O(n) (desplazamiento necesario)</td>
+<td>O(1) (si se tiene referencia)</td>
+</tr>
+<tr>
+<td>Flexibilidad</td>
+<td>Limitada</td>
+<td>Alta</td>
+</tr>
+</tbody>
+</table>
+<p>Este documento proporciona una visión general de las estructuras de datos fundamentales y su aplicación en la programación moderna, destacando la importancia de elegir la estructura adecuada según el contexto.</p>
+<hr />
+<h1>Resumen del Curso: Listas Enlazadas y el Uso de Modelos de Lenguaje</h1>
+<h2>Descripción</h2>
+<p>Este documento resume las ideas y conceptos discutidos en un video sobre la implementación de listas enlazadas y el uso de modelos de lenguaje (LLMs) como ChatGPT en el desarrollo de software. Se enfatiza la importancia de comprender el código generado por LLMs y las implicaciones de usar estructuras de datos como listas enlazadas en entornos de producción.</p>
+<h2>Contenido</h2>
+<h3>1. Introducción a las Listas Enlazadas</h3>
+<ul>
+<li><strong>Definición</strong>: Una lista enlazada es una estructura de datos que permite almacenar elementos en memoria no contigua, utilizando punteros para conectar cada elemento con el siguiente.</li>
+<li><strong>Ventajas sobre los Arreglos</strong>:</li>
+<li>Inserción y eliminación de elementos sin necesidad de mover otros elementos.</li>
+<li>Mayor flexibilidad en la gestión de memoria.</li>
+</ul>
+<h3>2. Desventajas de las Listas Enlazadas</h3>
+<p>A pesar de sus ventajas, las listas enlazadas presentan ciertos inconvenientes:
+- <strong>Sobrecarga de memoria</strong>: Cada nodo requiere espacio adicional para almacenar un puntero.
+- <strong>Rendimiento de caché</strong>: Acceder a elementos no contiguos puede afectar el rendimiento.
+- <strong>Complejidad algorítmica</strong>: Puede ser más difícil de implementar y mantener.</p>
+<h3>3. Uso de Modelos de Lenguaje (LLMs)</h3>
+<ul>
+<li><strong>Interacción con LLMs</strong>: Se recomienda hacer preguntas a los LLMs sobre las decisiones de implementación y los posibles problemas asociados.</li>
+<li><strong>Ejemplo de Preguntas</strong>:</li>
+<li>¿Cuáles son las desventajas de usar listas enlazadas?</li>
+<li>¿Cómo se puede mejorar la seguridad del código?</li>
+</ul>
+<h3>4. Riesgos en Entornos de Producción</h3>
+<p>Al implementar listas enlazadas en producción, se deben considerar los siguientes riesgos:
+| Riesgo                          | Descripción                                           |
+|---------------------------------|------------------------------------------------------|
+| Agotamiento de recursos         | Uso excesivo de memoria o CPU.                       |
+| Operaciones lentas              | Tiempo de ejecución prolongado en ciertas operaciones.|
+| Ataques de complejidad algorítmica | Vulnerabilidades que pueden ser explotadas.         |
+| Fugas de memoria                | Pérdida de memoria no liberada adecuadamente.        |
+| Problemas de concurrencia       | Errores en el acceso a datos compartidos.            |</p>
+<h3>5. Mejora del Código</h3>
+<p>Para mitigar los problemas mencionados, se pueden implementar las siguientes técnicas:
+- <strong>Limitación de tasa</strong>: Controlar la cantidad de operaciones permitidas en un tiempo determinado.
+- <strong>Gestión de memoria</strong>: Asegurarse de liberar la memoria no utilizada.
+- <strong>Validación de entradas</strong>: Comprobar que los datos de entrada sean válidos.
+- <strong>Control de concurrencia</strong>: Implementar mecanismos para manejar el acceso simultáneo a los datos.</p>
+<h3>6. Ejercicio Práctico</h3>
+<ul>
+<li><strong>Tarea</strong>: Implementar la funcionalidad para eliminar un nodo en una lista enlazada.</li>
+<li><strong>Sugerencia</strong>: Utilizar un LLM para obtener ayuda en la implementación y luego pedirle que evalúe el código en busca de riesgos de seguridad.</li>
+</ul>
+<h3>7. Conclusión</h3>
+<p>El uso de LLMs puede ser una herramienta valiosa para mejorar la comprensión y la calidad del código. Es fundamental no solo generar código, sino también cuestionar y analizar las decisiones detrás de su implementación. A medida que los LLMs se vuelven más potentes, la capacidad de los desarrolladores para interactuar con ellos y aprender de sus respuestas se vuelve crucial.</p>
+<h2>Recomendaciones</h2>
+<ul>
+<li>Practicar la interacción con LLMs para resolver problemas de programación.</li>
+<li>Estar al tanto de las implicaciones de usar estructuras de datos en entornos de producción.</li>
+<li>Continuar aprendiendo sobre estructuras de datos más complejas y su implementación.</li>
+</ul>
+<hr />
+<h1>Implementación de Listas Doblemente Enlazadas</h1>
+<h2>Descripción</h2>
+<p>En este documento se resumen los conceptos clave sobre la implementación de listas doblemente enlazadas, así como la importancia de este tipo de estructura de datos en comparación con las listas simplemente enlazadas. Se abordarán las ventajas, desventajas y consideraciones a tener en cuenta al implementar esta estructura.</p>
+<h2>Conceptos Clave</h2>
+<ul>
+<li><strong>Listas Enlazadas</strong>: Estructura de datos donde cada elemento (nodo) contiene un valor y un puntero al siguiente nodo.</li>
+<li><strong>Listas Doblemente Enlazadas</strong>: Cada nodo contiene punteros tanto al siguiente nodo como al nodo anterior, lo que permite una navegación bidireccional.</li>
+</ul>
+<h2>Ventajas de las Listas Doblemente Enlazadas</h2>
+<ol>
+<li><strong>Navegación Bidireccional</strong>: Permite moverse hacia adelante y hacia atrás en la lista.</li>
+<li><strong>Inserciones y Eliminaciones Eficientes</strong>: Facilita la inserción y eliminación de nodos en cualquier parte de la lista sin necesidad de recorrerla completamente.</li>
+<li><strong>Uso en Algoritmos Complejos</strong>: Más útil en algoritmos de gestión de memoria y caché, como el algoritmo LRU (Least Recently Used).</li>
+</ol>
+<h2>Desventajas de las Listas Doblemente Enlazadas</h2>
+<table>
+<thead>
+<tr>
+<th>Desventaja</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mayor Uso de Memoria</strong></td>
+<td>Se requiere más memoria para almacenar punteros adicionales.</td>
+</tr>
+<tr>
+<td><strong>Complejidad en la Implementación</strong></td>
+<td>La lógica para manejar punteros es más compleja.</td>
+</tr>
+</tbody>
+</table>
+<h2>Ejercicio Práctico</h2>
+<h3>Tarea</h3>
+<p>Implementar una lista doblemente enlazada a partir de una lista simplemente enlazada previamente creada. </p>
+<h3>Pasos a Seguir</h3>
+<ol>
+<li><strong>Revisar la Implementación de la Lista Simple</strong>: Comenzar desde la lista simplemente enlazada que se ha implementado anteriormente.</li>
+<li><strong>Planificación</strong>: Utilizar un modelo de lenguaje (LLM) para discutir y planificar la implementación de la lista doblemente enlazada.</li>
+<li><strong>Exploración de Escenarios</strong>: Considerar diferentes roles (por ejemplo, ingeniero de software, experto en seguridad) y cómo estos podrían influir en la implementación.</li>
+<li><strong>Documentación</strong>: Asegurarse de que el código esté bien documentado y explicado.</li>
+</ol>
+<h2>Consideraciones Finales</h2>
+<ul>
+<li>Es importante no solo crear el código, sino también criticar y probar las respuestas del modelo.</li>
+<li>La implementación de listas dobles puede ser un paso crucial en el aprendizaje de estructuras de datos más complejas.</li>
+<li>Tómese el tiempo necesario para entender cada parte del código y su funcionamiento.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>La implementación de listas doblemente enlazadas es un ejercicio valioso que no solo mejora la comprensión de las estructuras de datos, sino que también prepara al estudiante para enfrentar problemas más complejos en el desarrollo de software.</p>
+<hr />
+<h1>Resumen del Curso sobre Estructuras de Datos</h1>
+<h2>Descripción</h2>
+<p>En este curso, se exploran diversas estructuras de datos, comenzando con arreglos y listas enlazadas, y avanzando hacia árboles, grafos y tablas hash. Se enfatiza la importancia de probar el código y considerar aspectos de escalabilidad y seguridad al implementar estas estructuras.</p>
+<h2>Contenido</h2>
+<h3>1. Introducción a las Estructuras de Datos</h3>
+<ul>
+<li><strong>Arreglos</strong>: Se revisa cuándo utilizarlos y sus limitaciones.</li>
+<li><strong>Listas Enlazadas</strong>: Se implementan listas enlazadas simples y dobles, destacando su eficiencia en almacenamiento y recuperación.</li>
+</ul>
+<h3>2. Importancia de las Pruebas</h3>
+<ul>
+<li>Se recomienda utilizar herramientas como Google Colab para probar el código.</li>
+<li>Se sugiere crear casos de prueba y buscar romper el código para asegurar su robustez.</li>
+</ul>
+<h3>3. Estructuras de Datos Avanzadas</h3>
+<h4>3.1 Árboles</h4>
+<ul>
+<li><strong>Definición</strong>: Estructura de datos no lineal compuesta por nodos conectados por aristas.</li>
+<li><strong>Características</strong>:</li>
+<li>Un nodo raíz que conecta con uno o más nodos hijos.</li>
+<li>Nodos sin hijos se denominan nodos hoja.</li>
+<li>No hay ciclos en un árbol.</li>
+</ul>
+<h4>3.2 Árboles Binarios</h4>
+<ul>
+<li>Cada nodo tiene como máximo dos hijos (izquierdo y derecho).</li>
+<li><strong>Implementación</strong>:</li>
+<li>Se puede crear una clase <code>TreeNode</code> para representar cada nodo.</li>
+<li>Se puede construir un árbol binario especificando nodos individuales.</li>
+</ul>
+<h4>3.3 Árboles de Búsqueda Binaria (BST)</h4>
+<ul>
+<li>Se modifican los árboles binarios para permitir búsquedas eficientes.</li>
+<li><strong>Reglas de Inserción</strong>:</li>
+<li>Si el valor a insertar es mayor que el nodo actual, se inserta como hijo derecho.</li>
+<li>Si es menor, se inserta como hijo izquierdo.</li>
+</ul>
+<h3>4. Consideraciones para la Implementación</h3>
+<ul>
+<li><strong>Operaciones Faltantes</strong>: La implementación básica no incluye una operación de eliminación.</li>
+<li><strong>Recursión</strong>: Se debe considerar el impacto en la memoria al usar recursión.</li>
+<li><strong>Validación de Entrada</strong>: Es importante validar las entradas para evitar ataques de denegación de servicio.</li>
+<li><strong>Balanceo del Árbol</strong>: Un árbol balanceado mejora la eficiencia de búsqueda.</li>
+</ul>
+<h3>5. Uso de Modelos de Lenguaje Grande (LLM)</h3>
+<ul>
+<li>Se sugiere utilizar LLM como ChatGPT para evaluar y mejorar el código.</li>
+<li><strong>Ejemplo de Prompt</strong>: Se puede pedir al modelo que analice el código y sugiera mejoras en validación de entrada y manejo de errores.</li>
+</ul>
+<h3>6. Ejercicio Práctico</h3>
+<ul>
+<li>Se proporciona un código de implementación de un árbol AVL (un tipo de árbol de búsqueda binaria auto-balanceado) para que los estudiantes lo descarguen, prueben y mejoren.</li>
+</ul>
+<h2>Tabla de Comparación de Estructuras de Datos</h2>
+<table>
+<thead>
+<tr>
+<th>Estructura de Datos</th>
+<th>Ventajas</th>
+<th>Desventajas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arreglos</td>
+<td>Acceso rápido a elementos</td>
+<td>Tamaño fijo, costoso para insertar/eliminar</td>
+</tr>
+<tr>
+<td>Listas Enlazadas</td>
+<td>Inserciones y eliminaciones rápidas</td>
+<td>Búsqueda lenta, mayor uso de memoria</td>
+</tr>
+<tr>
+<td>Árboles</td>
+<td>Búsqueda eficiente (si están balanceados)</td>
+<td>Complejidad en la implementación</td>
+</tr>
+<tr>
+<td>Grafos</td>
+<td>Representación de relaciones complejas</td>
+<td>Complejidad en la manipulación</td>
+</tr>
+<tr>
+<td>Tablas Hash</td>
+<td>Acceso rápido a datos</td>
+<td>Colisiones y uso de memoria variable</td>
+</tr>
+</tbody>
+</table>
+<h2>Conclusión</h2>
+<p>El curso proporciona una base sólida en estructuras de datos, enfatizando la importancia de la prueba y la mejora continua del código. Se anima a los estudiantes a experimentar con el código y utilizar herramientas modernas para optimizar sus implementaciones. En la próxima sesión, se explorarán los grafos como una estructura de datos fundamental.</p>
+<hr />
+<h1>Resumen del Curso: Estructuras de Datos - Grafos</h1>
+<h2>Descripción</h2>
+<p>En este curso, se exploran las estructuras de datos, centrándose en los grafos como una forma de modelar relaciones entre objetos. Se discuten sus aplicaciones en la vida real, como en mapas de navegación y redes sociales, así como la implementación y mejora de un grafo dirigido en Python.</p>
+<h2>Contenido</h2>
+<h3>1. Introducción a los Grafos</h3>
+<ul>
+<li><strong>Definición</strong>: Un grafo es una estructura que modela relaciones entre objetos, donde:</li>
+<li><strong>Nodos</strong>: Representan entidades (ej. ubicaciones, personas).</li>
+<li><strong>Aristas (Edges)</strong>: Representan conexiones entre los nodos.</li>
+</ul>
+<h3>2. Aplicaciones de los Grafos</h3>
+<ul>
+<li><strong>Navegación</strong>: En un mapa, cada ubicación es un nodo y las carreteras son las aristas.</li>
+<li><strong>Redes Sociales</strong>: Los usuarios son nodos y las amistades son aristas.</li>
+<li><strong>Sistemas de Recomendación</strong>: Productos comprados pueden ser nodos, conectados por aristas que representan relaciones (ej. compras simultáneas).</li>
+</ul>
+<h3>3. Tipos de Grafos</h3>
+<ul>
+<li><strong>Grafos Dirigidos</strong>: Las aristas tienen una dirección (ej. un vuelo de Seattle a San José).</li>
+<li><strong>Grafos No Dirigidos</strong>: Las aristas son bidireccionales (ej. carreteras).</li>
+</ul>
+<h3>4. Consideraciones para la Implementación</h3>
+<ul>
+<li><strong>Escalabilidad</strong>: Los grafos deben manejar grandes volúmenes de datos.</li>
+<li><strong>Semántica</strong>: Es importante incluir información adicional (ej. tipo de conexión).</li>
+<li><strong>Seguridad</strong>: Considerar problemas como ataques de denegación de servicio.</li>
+</ul>
+<h3>5. Mejora de la Implementación</h3>
+<ul>
+<li>Se presenta un código inicial para un grafo dirigido en Python (<code>graph.py</code>).</li>
+<li>Se discuten mejoras necesarias, como:</li>
+<li>Comprobación de aristas existentes.</li>
+<li>Manejo de concurrencia.</li>
+<li>Comentarios y documentación en el código.</li>
+</ul>
+<h3>6. Actividades Prácticas</h3>
+<ul>
+<li>Se invita a los participantes a modificar el código y probar su robustez.</li>
+<li>Se sugiere compartir casos de prueba en la comunidad del curso.</li>
+</ul>
+<h3>7. Algoritmos de Grafos</h3>
+<ul>
+<li>Se introduce la idea de utilizar algoritmos para resolver problemas del mundo real utilizando grafos.</li>
+</ul>
+<h2>Tabla de Comparación de Grafos</h2>
+<table>
+<thead>
+<tr>
+<th>Tipo de Grafo</th>
+<th>Dirección</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dirigido</td>
+<td>Sí</td>
+<td>Vuelo de Seattle a San José</td>
+</tr>
+<tr>
+<td>No Dirigido</td>
+<td>No</td>
+<td>Carretera entre dos ciudades</td>
+</tr>
+</tbody>
+</table>
+<h2>Lista de Consideraciones para la Implementación de Grafos</h2>
+<ul>
+<li>[ ] Escalabilidad</li>
+<li>[ ] Semántica de las conexiones</li>
+<li>[ ] Seguridad y manejo de datos</li>
+<li>[ ] Documentación y comentarios en el código</li>
+</ul>
+<h2>Conclusión</h2>
+<p>Los grafos son estructuras de datos versátiles que permiten modelar relaciones complejas en diversas aplicaciones. La implementación y mejora de estas estructuras son cruciales para su uso efectivo en sistemas del mundo real.</p>
+<hr />
+<h1>Resumen del Módulo: Algoritmos y Estructuras de Datos</h1>
+<h2>Descripción</h2>
+<p>En este módulo, se ha explorado el trabajo con Modelos de Lenguaje Grande (LLM) para implementar estructuras de datos fundamentales, no solo los conceptos básicos de CS 101, sino también cómo llevar estas estructuras al mundo real considerando aspectos como escalabilidad, seguridad, documentación y pruebas. A continuación, se presentan las tareas prácticas que se deben realizar en el laboratorio calificado.</p>
+<h2>Tareas del Laboratorio</h2>
+<h3>Problemas a Resolver</h3>
+<p>Se te asignarán dos problemas relacionados con grafos, que deberás resolver en dos casos: uno con un grafo pequeño (aproximadamente diez nodos) y otro con un grafo grande (miles de nodos).</p>
+<ol>
+<li><strong>Cálculo de la Ruta Más Corta</strong></li>
+<li><strong>Descripción</strong>: Dado dos vértices de un grafo, implementa un algoritmo para calcular la ruta más corta entre ellos.</li>
+<li>
+<p><strong>Algoritmo Sugerido</strong>: Dijkstra.</p>
+</li>
+<li>
+<p><strong>Problema del Viajante</strong></p>
+</li>
+<li><strong>Descripción</strong>: Dado un vértice de inicio, calcula la ruta más corta que visite todos los vértices del grafo.</li>
+<li><strong>Nombre Común</strong>: Problema del Viajante (Travelling Salesman Problem).</li>
+</ol>
+<h3>Consideraciones para la Implementación</h3>
+<ul>
+<li><strong>Calidad del Código</strong>: Asegúrate de que el código sea de calidad profesional y esté listo para producción. Considera atributos como:</li>
+<li>Seguridad</li>
+<li>Escalabilidad</li>
+<li>Manejabilidad</li>
+</ul>
+<h3>Proceso de Evaluación</h3>
+<p>El laboratorio evaluará tu trabajo ejecutando tu código en algunos casos de prueba. También habrá pistas disponibles en caso de que te quedes atascado. Se espera que el LLM sea una herramienta útil durante esta actividad.</p>
+<h2>Conclusión</h2>
+<p>Al finalizar el laboratorio, se discutirá la última estructura de datos de este módulo: la tabla hash.</p>
+<h2>Tabla de Resumen de Problemas</h2>
+<table>
+<thead>
+<tr>
+<th>Problema</th>
+<th>Descripción</th>
+<th>Algoritmo Sugerido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cálculo de la Ruta Más Corta</td>
+<td>Calcular la ruta más corta entre dos vértices de un grafo.</td>
+<td>Dijkstra</td>
+</tr>
+<tr>
+<td>Problema del Viajante</td>
+<td>Calcular la ruta más corta que visite todos los vértices del grafo.</td>
+<td>Problema del Viajante</td>
+</tr>
+</tbody>
+</table>
+<h2>Lista de Consideraciones para el Código</h2>
+<ul>
+<li>[ ] Seguridad</li>
+<li>[ ] Escalabilidad</li>
+<li>[ ] Manejabilidad</li>
+<li>[ ] Documentación</li>
+<li>[ ] Pruebas exhaustivas</li>
+</ul>
+<p>¡Buena suerte en tu laboratorio!</p>
+<hr />
+<h1>Resumen del Módulo: Estructuras de Datos y Tablas Hash</h1>
+<h2>Descripción</h2>
+<p>En este módulo, se exploran diferentes tipos de datos utilizados para resolver problemas complejos en programación, centrándose en la implementación de tablas hash (o hash maps). Se discuten conceptos clave, ejemplos prácticos y se analizan las mejores prácticas al trabajar con estas estructuras de datos.</p>
+<h2>Conceptos Clave</h2>
+<ul>
+<li><strong>Tablas Hash vs. Hash Maps</strong>: </li>
+<li>
+<p>Ambos términos se utilizan de manera intercambiable para referirse a una estructura de datos que se asemeja a un arreglo, pero donde el índice puede ser cualquier valor, no solo un número.</p>
+</li>
+<li>
+<p><strong>Ejemplo Práctico</strong>: </p>
+</li>
+<li>Contar la frecuencia de palabras en un conjunto de datos, como las obras de Shakespeare. </li>
+<li>Algoritmo básico:<ol>
+<li>Iterar sobre cada palabra.</li>
+<li>Si la palabra ya existe en la tabla hash, incrementar su contador.</li>
+<li>Si no existe, crear una nueva entrada con un valor de 1.</li>
+</ol>
+</li>
+</ul>
+<h2>Implementación en Python</h2>
+<h3>Código de Ejemplo: Contar Palabras</h3>
+<pre><code class="language-python">from collections import Counter
+import requests
+import re
+
+def contar_palabras(url):
+    response = requests.get(url)
+    texto = response.text
+    palabras = re.findall(r'\w+', texto.lower())
+    contador = Counter(palabras)
+    return contador
+</code></pre>
+<h3>Análisis del Código</h3>
+<ul>
+<li><strong>Uso de <code>Counter</code></strong>: </li>
+<li>
+<p>Proporciona métodos integrados y manejo de valores predeterminados, lo que simplifica el código.</p>
+</li>
+<li>
+<p><strong>Expresiones Regulares</strong>: </p>
+</li>
+<li>Se utilizan para encontrar todas las palabras, aunque su eficiencia puede depender de la limpieza del texto.</li>
+</ul>
+<h2>Consideraciones de Escalabilidad</h2>
+<ul>
+<li><strong>Escalabilidad</strong>: </li>
+<li>Al contar palabras en millones de libros, se debe considerar el uso de <code>Counter</code> frente a un diccionario estándar.</li>
+<li><code>Counter</code> es una subclase de diccionario, lo que significa que su rendimiento es similar.</li>
+</ul>
+<h2>Problemas Potenciales en el Código</h2>
+<ol>
+<li><strong>Validación de URL</strong>: </li>
+<li>
+<p>No hay verificación de entradas, lo que puede llevar a problemas de seguridad.</p>
+</li>
+<li>
+<p><strong>Manejo de Errores</strong>: </p>
+</li>
+<li>
+<p>El código tiene un manejo de errores genérico que no ayuda a depurar problemas específicos.</p>
+</li>
+<li>
+<p><strong>Expresiones Regulares</strong>: </p>
+</li>
+<li>
+<p>Pueden ser complicadas y requieren experiencia para asegurar su correcto funcionamiento.</p>
+</li>
+<li>
+<p><strong>Problemas de Concurrencia</strong>: </p>
+</li>
+<li>
+<p>No hay gestión de recursos ni registro de eventos, lo que puede causar problemas en entornos de producción.</p>
+</li>
+<li>
+<p><strong>Timeout en Solicitudes</strong>: </p>
+</li>
+<li>Falta de un tiempo de espera en las solicitudes a servidores, lo que puede causar que los hilos se cuelguen.</li>
+</ol>
+<h2>Mejoras Sugeridas</h2>
+<ul>
+<li><strong>Escribir Casos de Prueba</strong>: </li>
+<li>
+<p>Probar el código con diferentes URLs y en diferentes idiomas.</p>
+</li>
+<li>
+<p><strong>Documentar el Código</strong>: </p>
+</li>
+<li>
+<p>Asegurarse de que el código esté bien documentado para facilitar su comprensión y mantenimiento.</p>
+</li>
+<li>
+<p><strong>Refactorizar el Código</strong>: </p>
+</li>
+<li>Considerar la posibilidad de implementar el código en otros lenguajes de programación o adaptarlo a diferentes conjuntos de caracteres.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>Este módulo ha proporcionado una comprensión sólida de las tablas hash y su implementación en Python. Se ha enfatizado la importancia de trabajar con modelos de lenguaje (LLMs) para mejorar el proceso de codificación y resolver problemas comunes en entrevistas de programación. Se alienta a los estudiantes a seguir explorando y mejorando sus soluciones a través de la colaboración con LLMs.</p>
+<hr />
+<h1>Resumen del Curso de Inteligencia Artificial y Aprendizaje Automático</h1>
+<h2>Descripción</h2>
+<p>Este curso ha proporcionado una introducción a la inteligencia artificial (IA) y al aprendizaje automático (ML), explorando cómo estas tecnologías permiten la creación de aplicaciones inteligentes. A lo largo del curso, se han abordado conceptos clave, herramientas y técnicas que son fundamentales para el desarrollo de software utilizando IA.</p>
+<h2>Contenidos Clave</h2>
+<ol>
+<li><strong>Introducción a la IA y ML</strong></li>
+<li>Definición de IA.</li>
+<li>
+<p>Cómo el aprendizaje automático permite construir aplicaciones inteligentes.</p>
+</li>
+<li>
+<p><strong>Tipos de Aprendizaje Automático</strong></p>
+</li>
+<li>Exploración de diferentes tipos de ML.</li>
+<li>
+<p>Comprensión de los transformadores, tecnología que sustenta la IA generativa.</p>
+</li>
+<li>
+<p><strong>IA Generativa</strong></p>
+</li>
+<li>Capacidad de generar y analizar código fuente.</li>
+<li>
+<p>Aplicaciones en ingeniería de software más allá de la codificación:</p>
+<ul>
+<li>Documentación.</li>
+<li>Depuración.</li>
+<li>Otras tareas relacionadas.</li>
+</ul>
+</li>
+<li>
+<p><strong>Optimización de Prompts</strong></p>
+</li>
+<li>Importancia de formular prompts efectivos.</li>
+<li>
+<p>Estrategias para mejorar la interacción con modelos de lenguaje:</p>
+<ul>
+<li>Ser específico.</li>
+<li>Asignar roles al modelo.</li>
+<li>Incorporar experiencia personal para guiar al modelo.</li>
+<li>Proporcionar retroalimentación.</li>
+</ul>
+</li>
+<li>
+<p><strong>Estructuras de Datos</strong></p>
+</li>
+<li>Ejemplo práctico de conceptos básicos de ciencias de la computación.</li>
+<li>Escalabilidad y evaluación de vulnerabilidades.</li>
+<li>
+<p>Limitaciones en la implementación y problemas de seguridad.</p>
+</li>
+<li>
+<p><strong>Preparación para Entrevistas de Ingeniería de Software</strong></p>
+</li>
+<li>Aplicación de los conocimientos adquiridos en entrevistas.</li>
+</ol>
+<h2>Próximos Pasos</h2>
+<p>En esta especialización, se profundizará en el uso de modelos de lenguaje como asistentes para mejorar las habilidades de desarrollo. Los temas a explorar incluyen:</p>
+<ul>
+<li>Uso y escalado de datos.</li>
+<li>Comprensión de pruebas y casos de prueba.</li>
+<li>Otras áreas relevantes para el desarrollo de software.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>Este curso ha sido solo el comienzo de un emocionante viaje en el mundo de la inteligencia artificial y el aprendizaje automático. Se espera que los participantes continúen explorando y aplicando estos conceptos en su desarrollo profesional. ¡Gracias por participar!</p>
+<hr />
+<h1>Resumen del Curso de Inteligencia Artificial y Aprendizaje Automático</h1>
+<h2>Descripción</h2>
+<p>Este curso ha proporcionado una introducción a la inteligencia artificial (IA) y al aprendizaje automático (ML), explorando cómo estas tecnologías permiten la creación de aplicaciones inteligentes. A lo largo del curso, se han abordado conceptos clave, herramientas y técnicas que son fundamentales para el desarrollo de software utilizando IA.</p>
+<h2>Contenidos Clave</h2>
+<ol>
+<li><strong>Introducción a la IA y ML</strong></li>
+<li>Definición de IA.</li>
+<li>
+<p>Cómo el aprendizaje automático permite construir aplicaciones inteligentes.</p>
+</li>
+<li>
+<p><strong>Tipos de Aprendizaje Automático</strong></p>
+</li>
+<li>Exploración de diferentes tipos de ML.</li>
+<li>
+<p>Comprensión de los transformadores, tecnología que sustenta la IA generativa.</p>
+</li>
+<li>
+<p><strong>IA Generativa</strong></p>
+</li>
+<li>Capacidad de generar y analizar código fuente.</li>
+<li>
+<p>Aplicaciones en ingeniería de software más allá de la codificación:</p>
+<ul>
+<li>Documentación.</li>
+<li>Depuración.</li>
+<li>Otras tareas relacionadas.</li>
+</ul>
+</li>
+<li>
+<p><strong>Optimización de Prompts</strong></p>
+</li>
+<li>Importancia de formular prompts efectivos.</li>
+<li>
+<p>Estrategias para mejorar la interacción con modelos de lenguaje:</p>
+<ul>
+<li>Ser específico.</li>
+<li>Asignar roles al modelo.</li>
+<li>Incorporar experiencia personal para guiar al modelo.</li>
+<li>Proporcionar retroalimentación.</li>
+</ul>
+</li>
+<li>
+<p><strong>Estructuras de Datos</strong></p>
+</li>
+<li>Ejemplo práctico de conceptos básicos de ciencias de la computación.</li>
+<li>Escalabilidad y evaluación de vulnerabilidades.</li>
+<li>
+<p>Limitaciones en la implementación y problemas de seguridad.</p>
+</li>
+<li>
+<p><strong>Preparación para Entrevistas de Ingeniería de Software</strong></p>
+</li>
+<li>Aplicación de los conocimientos adquiridos en entrevistas.</li>
+</ol>
+<h2>Próximos Pasos</h2>
+<p>En esta especialización, se profundizará en el uso de modelos de lenguaje como asistentes para mejorar las habilidades de desarrollo. Los temas a explorar incluyen:</p>
+<ul>
+<li>Uso y escalado de datos.</li>
+<li>Comprensión de pruebas y casos de prueba.</li>
+<li>Otras áreas relevantes para el desarrollo de software.</li>
+</ul>
+<h2>Conclusión</h2>
+<p>Este curso ha sido solo el comienzo de un emocionante viaje en el mundo de la inteligencia artificial y el aprendizaje automático. Se espera que los participantes continúen explorando y aplicando estos conceptos en su desarrollo profesional. ¡Gracias por participar!</p>
+<hr />
+
+    </body>
+        <script>
+        var stylesBot = "styles_bot.css";
+        var stylesMsj = "styles_msj.css";
+        const botName =  "bot-semana_3";
+        const title = "semana_3";
+        const bot = "1";
+        </script>
+    <script src='./script_bot.js'></script>
+    </html>
+    
