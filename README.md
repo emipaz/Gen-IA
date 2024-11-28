@@ -1,4 +1,4 @@
-# Chatbot de Data Engineerin API con Flask
+# Chatbot de Generative AI for Software Development
 
 Este proyecto implementa un chatbot basado en Flask que utiliza la API de OpenAI. 
 La aplicación incluye una interfaz local en HTML y soporte para procesamiento de Markdown, LaTeX, y enlaces externos seguros.
